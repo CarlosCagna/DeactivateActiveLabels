@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/plugins/DeactivateActiveLabels" >
+        <file>label.png</file>
+        <file>labels.png</file>	
+		<file>clean.png</file>	
+    </qresource>
+</RCC>
