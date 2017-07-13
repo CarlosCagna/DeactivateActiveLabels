@@ -218,17 +218,19 @@ class DeactivateActiveLabels:
 
     def run(self):
         """Run method that performs all the real work"""
-
-        layer = self.iface.activeLayer()       
-        if layer.customProperty("labeling/enabled")== 'True' or layer.customProperty("labeling/enabled")== 'true':
-            layer.setCustomProperty("labeling/enabled", False)
-            self.activeButton.setChecked(False)            
+        if self.iface.activeLayer() <> None:
+            layer = self.iface.activeLayer()       
+            if layer.customProperty("labeling/enabled")== 'True' or layer.customProperty("labeling/enabled")== 'true':
+                layer.setCustomProperty("labeling/enabled", False)
+                self.activeButton.setChecked(False)            
+                
+            else :
+                layer.setCustomProperty("labeling/enabled", 'True')
+                self.activeButton.setChecked(True)  
+            self.iface.mapCanvas().refresh()          
+        else:
+            self.activeButton.setChecked(False)
             
-        else :
-            layer.setCustomProperty("labeling/enabled", 'True')
-            self.activeButton.setChecked(True)  
-        self.iface.mapCanvas().refresh()          
-
     def run2(self):
         """Run method that performs all the real work"""
         layers = self.iface.legendInterface()

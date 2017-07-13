@@ -14,7 +14,7 @@ version=0.1
 author=Carlos Eduardo Cagna\ IBGE
 email=carlos.cagna@ibge.gov.br
 
-about=Button to Deactivate or Active Labels 
+about=This Plugin create one Button to on/off layer’s label and other Button to invert the on/off labels from all layers.
 
 tracker=https://github.com/CarlosCagna/DeactivateActiveLabels/issues
 repository=https://github.com/CarlosCagna/DeactivateActiveLabels
