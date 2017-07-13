@@ -10,7 +10,7 @@
 name=Deactivate/Active Labels
 qgisMinimumVersion=2.0
 description=Button to Deactivate or Active Labels 
-version=0.1
+version=0.1.1
 author=Carlos Eduardo Cagna\ IBGE
 email=carlos.cagna@ibge.gov.br
 
