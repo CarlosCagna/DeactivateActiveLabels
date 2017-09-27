@@ -10,7 +10,7 @@
 name=Deactivate/Active Labels
 qgisMinimumVersion=2.0
 description=Button to Deactivate or Active Labels 
-version=0.1.1
+version=1.0.0
 author=Carlos Eduardo Cagna\ IBGE
 email=carlos.cagna@ibge.gov.br
 
@@ -32,7 +32,7 @@ homepage=https://github.com/CarlosCagna/DeactivateActiveLabels
 category=Plugins
 icon=label.png
 # experimental flag
-experimental=True
+experimental=False
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
